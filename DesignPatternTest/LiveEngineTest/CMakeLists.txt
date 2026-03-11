@@ -10,9 +10,10 @@ add_executable(LiveEngineTest
 )
 
 target_compile_definitions(LiveEngineTest PRIVATE
-    "ENABLE_HOTRELOADING"
     "FOLDER=\"${CMAKE_CURRENT_SOURCE_DIR}/Folder1/|${CMAKE_CURRENT_SOURCE_DIR}/Folder2/\""
 )
+
+target_compile_definitions(DesignPattern PUBLIC "ENABLE_HOTRELOADING")
 
 target_link_libraries(LiveEngineTest PRIVATE
     Qt6::Test
