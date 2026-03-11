@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(CTest)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Test Qml Quick QuickControls2 Network Sql Xml)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Test Qml Quick QuickControls2 Network Sql Xml)
 # Note: components above are a superset; you can trim later.
 
 add_subdirectory(DesignPattern)
