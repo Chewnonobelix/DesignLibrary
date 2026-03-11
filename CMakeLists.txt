@@ -10,5 +10,4 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Test Qml Quick QuickControls2 Netw
 # Note: components above are a superset; you can trim later.
 
 add_subdirectory(DesignPattern)
-add_subdirectory(DesignPatternTest/LiveEngineTest)
-add_subdirectory(DesignPatternTest/MetaDataTest)
+add_subdirectory(DesignPatternTest)
