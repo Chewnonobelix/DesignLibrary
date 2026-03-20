@@ -14,16 +14,20 @@ add_library(ChewnoDesignPattern
     metadata.h
 )
 
-target_compile_definitions(DesignPattern PRIVATE
+target_compile_definitions(ChewnoDesignPattern PRIVATE
     "DESIGNPATTERN_LIBRARY"
     "QT_DEPRECATED_WARNINGS"
 )
 
-target_link_libraries(DesignPattern PRIVATE
+target_link_libraries(ChewnoDesignPattern PRIVATE
     Qt6::Core
     Qt6::Quick
 )
 
-target_include_directories(DesignPattern PUBLIC
+target_include_directories(ChewnoDesignPattern PUBLIC
    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+add_custom_target(run_tests_designpattern
+    COMMAND ${CMAKE_CTEST_COMMAND}
 )

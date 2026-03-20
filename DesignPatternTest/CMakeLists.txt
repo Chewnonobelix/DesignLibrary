@@ -28,5 +28,16 @@ target_link_libraries(TestMetaData PRIVATE
     Qt6::Core
     Qt6::Quick
     Qt6::Qml
-    DesignPattern
+    ChewnoDesignPattern
+)
+
+add_test(NAME TestLiveEngine COMMAND TestLiveEngine)
+add_test(NAME TestMetaData COMMAND TestMetaData)
+
+add_custom_target(run_designpattern_tests
+    COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure
+    DEPENDS
+        TestMetaData
+        TestLiveEngine
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
 )
