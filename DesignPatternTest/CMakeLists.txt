@@ -12,7 +12,7 @@ target_compile_definitions(TestLiveEngine PRIVATE
     "FOLDER=\"${CMAKE_CURRENT_SOURCE_DIR}/LiveEngineTest/Folder1/|${CMAKE_CURRENT_SOURCE_DIR}/LiveEngineTest/Folder2/\""
 )
 
-target_compile_definitions(DesignPattern PUBLIC "ENABLE_HOTRELOADING")
+target_compile_definitions(ChewnoDesignPattern PUBLIC "ENABLE_HOTRELOADING")
 
 target_link_libraries(TestLiveEngine PRIVATE
     Qt6::Test
@@ -20,7 +20,7 @@ target_link_libraries(TestLiveEngine PRIVATE
     Qt6::Core
     Qt6::Quick
     Qt6::Qml
-    DesignPattern
+    ChewnoDesignPattern
 )
 target_link_libraries(TestMetaData PRIVATE
     Qt6::Test

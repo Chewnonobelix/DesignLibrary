@@ -4,7 +4,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-add_library(DesignPattern
+add_library(ChewnoDesignPattern
     designpattern.cpp
     liveqmlengine.cpp
     metadata.cpp
