@@ -16,7 +16,6 @@ target_compile_definitions(ChewnoDesignPattern PUBLIC "ENABLE_HOTRELOADING")
 
 target_link_libraries(TestLiveEngine PRIVATE
     Qt6::Test
-    Qt6::Xml
     Qt6::Core
     Qt6::Quick
     Qt6::Qml
@@ -24,7 +23,6 @@ target_link_libraries(TestLiveEngine PRIVATE
 )
 target_link_libraries(TestMetaData PRIVATE
     Qt6::Test
-    Qt6::Xml
     Qt6::Core
     Qt6::Quick
     Qt6::Qml
